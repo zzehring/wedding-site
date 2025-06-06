@@ -16,7 +16,9 @@ const currentPage = Astro.url.pathname;
 	</head>
 	<body>
 		<header class="hero-section">
-			<div class="hero-graphic">[Illustrative Graphic Placeholder]</div>
+			<div class="hero-graphic">
+				<img src="/vmfa-building-sketch.png" alt="Sketch of the VMFA building" class="hero-image" />
+			</div>
 			<h1 class="hero-names">KRISTAL & ZACK</h1>
 			<div class="hero-details">
 				<p>SEPTEMBER 21, 2024 &bull; OUR HOME TOWN, USA</p>
@@ -51,6 +53,15 @@ const currentPage = Astro.url.pathname;
 	.hero-section {
 		/* Container for the top graphic, names, and details */
 		padding-bottom: 1rem; /* Space between hero details and nav */
+	}
+	.hero-graphic {
+		text-align: center;
+		padding: 2rem 0;
+	}
+	.hero-image {
+		max-width: 100%;
+		height: auto;
+		max-height: 250px;
 	}
 	nav {
 		display: flex;
