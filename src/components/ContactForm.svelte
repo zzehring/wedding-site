@@ -40,6 +40,10 @@
 </script>
 
 <style>
+  h2 {
+    text-align: center;
+    margin-top: 0;
+  }
   .contact-form {
     max-width: 500px;
     margin: 2rem auto;
