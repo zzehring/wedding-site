@@ -1,13 +1,14 @@
 <script>
   let name = '';
   let email = '';
+  let phone = '';
   let status = ''; // 'submitting', 'success', 'error'
 
   async function handleSubmit() {
     status = 'submitting';
     
     // Simulate a network request
-    console.log('Submitting:', { name, email });
+    console.log('Submitting:', { name, email, phone });
 
     // This is where you'll call your serverless function
     // For now, we'll just simulate success
@@ -19,13 +20,14 @@
       const response = await fetch('/api/submit-contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email }),
+        body: JSON.stringify({ name, email, phone }),
       });
 
       if (response.ok) {
         status = 'success';
         name = '';
         email = '';
+        phone = '';
       } else {
         status = 'error';
       }
@@ -119,6 +121,10 @@
       <div class="form-group">
         <label for="email">Email</label>
         <input id="email" type="email" bind:value={email} required disabled={status === 'submitting'} />
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input id="phone" type="tel" bind:value={phone} required disabled={status === 'submitting'} />
       </div>
       <button type="submit" disabled={status === 'submitting'}>
         {#if status === 'submitting'}
