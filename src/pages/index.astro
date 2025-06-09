@@ -1,9 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ContactForm from '../components/ContactForm.svelte';
 ---
 
 <Layout title="Home - Our Wedding">
-  <h1>Welcome to Our Wedding Website!</h1>
-  <p>We're so excited to celebrate with you.</p>
-  <p>Explore the site to find details about the event, RSVP, and more.</p>
+  <h1>We're Getting Married!</h1>
+  <p>
+    We're so excited to celebrate with you. Please leave your contact information
+    below and we will be in touch with more details.
+  </p>
+  <ContactForm client:load />
 </Layout>
+
+<style>
+  h1 {
+    margin-top: 0;
+  }
+  p {
+    text-align: center;
+    max-width: 60ch;
+    margin: 1rem auto 2rem;
+  }
+</style>
