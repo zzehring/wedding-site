@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css'; // Import global styles
+import Countdown from '../components/Countdown.svelte';
 
 // Helper to determine if a link is active for styling the nav
 const currentPage = Astro.url.pathname;
@@ -19,10 +20,10 @@ const currentPage = Astro.url.pathname;
 			<div class="hero-graphic">
 				<img src="/vmfa-building-sketch.png" alt="Sketch of the VMFA building" class="hero-image" />
 			</div>
-			<h1 class="hero-names">KRISTAL & ZACK</h1>
+			<h1 class="hero-names">Kristal & Zack</h1>
 			<div class="hero-details">
-				<p>SEPTEMBER 21, 2024 &bull; OUR HOME TOWN, USA</p>
-				<p>COUNTDOWN PLACEHOLDER</p>
+				<p>APRIL 18, 2026 &bull; RICHMOND, VIRGINIA</p>
+				<Countdown client:load targetDate="2026-04-18" />
 			</div>
 		</header>
 
@@ -38,7 +39,7 @@ const currentPage = Astro.url.pathname;
 			<slot />
 		</main>
 		<footer>
-			<p>&copy; 2024 Krack</p>
+			<p>&copy; 2025 Krack</p>
 		</footer>
 	</body>
 </html>
@@ -75,7 +76,6 @@ const currentPage = Astro.url.pathname;
 	nav a {
 		text-decoration: none;
 		color: #4A442D; /* Dark Warm Brown for nav links */
-		font-family: 'Montserrat', sans-serif;
 		font-weight: 400; /* Regular weight for nav links */
 		font-size: 0.9rem;
 		padding: 0.25rem 0.1rem; /* Minimal padding, focus on underline */
@@ -101,6 +101,19 @@ const currentPage = Astro.url.pathname;
 		background-color: transparent; 
 		color: #4A442D; 
 		font-size: 0.9rem;
-		font-family: 'Montserrat', sans-serif;
+	}
+	button {
+		border-radius: 4px;
+		font-size: 1rem;
+		font-weight: 600;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+	button:hover {
+		// ... existing code ...
+	}
+
+	.hero-names {
+		font-family: 'Playwrite NG Modern', cursive;
 	}
 </style>

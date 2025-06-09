@@ -1,11 +1,11 @@
 /* src/styles/global.css */
 
-/* Import Lora and Montserrat fonts from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap');
+/* Import Piazzolla and Playwrite NG Modern fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;400;700&family=Playwrite+NG+Modern:wght@100&display=swap');
 
 body {
-  font-family: 'Lora', serif; /* Lora for body text */
-  font-weight: 400; /* Regular weight for body */
+  font-family: 'Piazzolla', serif; /* Piazzolla for body text */
+  font-weight: 100; /* Thin weight for body */
   color: #4A442D; /* Dark Warm Brown for text */
   background-color: white;
   margin: 0;
@@ -14,8 +14,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lora', serif; /* Lora for headings */
-  font-weight: 700; /* Bold Lora */
+  font-family: 'Piazzolla', serif; /* Piazzolla for headings */
+  font-weight: 700; /* Bold Piazzolla */
   color: #4A442D; /* Dark Warm Brown for headings */
   margin-top: 1.5em;
   margin-bottom: 0.5em;
@@ -29,15 +29,28 @@ h2 {
   font-size: 2rem;
 }
 
-a {
-  color: #84999A; /* Desaturated Blue-Grey for general links in content */
-  text-decoration: none;
-  transition: color 0.3s ease;
+.hero-names {
+  font-family: 'Playwrite NG Modern', cursive;
+  font-weight: 100; /* Thin weight */
+  font-size: 4.5rem; /* Increased size */
+  color: #4A442D;
+  text-align: center;
+  margin: -2rem 0 0; /* Negative top margin */
+  letter-spacing: 2px;
 }
 
-a:hover {
-  color: #6E8483; /* Darker Desaturated Blue-Grey for link hover */
-  text-decoration: underline;
+.hero-details {
+  font-family: 'Piazzolla', serif;
+  font-weight: 400; /* Regular weight */
+  font-size: 0.9rem;
+  color: #4A442D;
+  text-align: center;
+  margin: 0 0 0.5rem 0; /* Reduced space before main content */
+  line-height: 1.5;
+}
+
+.hero-details p {
+  margin: 0.25rem 0;
 }
 
 /* Hero Section Styles */
@@ -49,29 +62,15 @@ a:hover {
   /* In a real scenario, this would contain an SVG or image */
 }
 
-.hero-names {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600; /* Semi-bold or bold */
-  font-size: 3rem; /* Large, adjust as needed */
-  color: #4A442D;
-  text-align: center;
-  margin: 0.5rem 0;
-  letter-spacing: 2px; /* A bit of spacing like the example */
-  text-transform: uppercase;
+a {
+  color: #84999A; /* Desaturated Blue-Grey for general links in content */
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.hero-details {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400; /* Regular weight */
-  font-size: 0.9rem;
-  color: #4A442D;
-  text-align: center;
-  margin: 0 0 0.5rem 0; /* Reduced space before main content */
-  line-height: 1.5;
-}
-
-.hero-details p {
-  margin: 0.25rem 0;
+a:hover {
+  color: #6E8483; /* Darker Desaturated Blue-Grey for link hover */
+  text-decoration: underline;
 }
 
 /* You can add more global styles here */ 
