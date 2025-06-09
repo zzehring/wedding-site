@@ -46,7 +46,7 @@
     text-align: center;
   }
   .time-value {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
   .time-label {
