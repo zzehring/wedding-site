@@ -73,7 +73,7 @@
   button {
     width: 100%;
     padding: 0.75rem;
-    background-color: #4A442D;
+    background-color: #49745b;
     color: white;
     border: none;
     border-radius: 4px;
@@ -83,7 +83,7 @@
     transition: background-color 0.3s ease;
   }
   button:hover {
-    background-color: #6E8483;
+    background-color: #3a5c48;
   }
   button:disabled {
     background-color: #ccc;

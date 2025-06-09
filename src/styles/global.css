@@ -6,7 +6,7 @@
 body {
   font-family: 'Piazzolla', serif; /* Piazzolla for body text */
   font-weight: 100; /* Thin weight for body */
-  color: #4A442D; /* Dark Warm Brown for text */
+  color: #49745b; /* Unified text color */
   background-color: white;
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Piazzolla', serif; /* Piazzolla for headings */
   font-weight: 700; /* Bold Piazzolla */
-  color: #4A442D; /* Dark Warm Brown for headings */
+  color: #49745b; /* Unified text color */
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
@@ -43,7 +43,7 @@ h2 {
   font-family: 'Piazzolla', serif;
   font-weight: 400; /* Regular weight */
   font-size: 0.9rem;
-  color: #4A442D;
+  color: #49745b; /* Unified text color */
   text-align: center;
   margin: 0 0 0.5rem 0; /* Reduced space before main content */
   line-height: 1.5;
@@ -63,13 +63,13 @@ h2 {
 }
 
 a {
-  color: #84999A; /* Desaturated Blue-Grey for general links in content */
+  color: #49745b; /* Unified text color */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #6E8483; /* Darker Desaturated Blue-Grey for link hover */
+  color: #3a5c48; /* Darker shade for hover */
   text-decoration: underline;
 }
 

@@ -52,7 +52,7 @@
   .time-label {
     font-size: 0.8rem;
     text-transform: uppercase;
-    color: #6E8483; /* Using the hover color for a muted feel */
+    color: #49745b; /* Unified text color */
   }
   .end-message {
     font-size: 1.5rem;

@@ -75,7 +75,7 @@ const currentPage = Astro.url.pathname;
 	}
 	nav a {
 		text-decoration: none;
-		color: #4A442D; /* Dark Warm Brown for nav links */
+		color: #49745b; /* Unified text color */
 		font-weight: 400; /* Regular weight for nav links */
 		font-size: 0.9rem;
 		padding: 0.25rem 0.1rem; /* Minimal padding, focus on underline */
@@ -83,12 +83,12 @@ const currentPage = Astro.url.pathname;
 		transition: border-color 0.3s ease, color 0.3s ease;
 	}
 	nav a.active {
-		border-bottom-color: #4A442D; /* Underline active link */
+		border-bottom-color: #49745b; /* Unified text color */
 		font-weight: 600; /* Slightly bolder for active link */
 	}
 	nav a:not(.active):hover {
-		color: #84999A; /* Desaturated Blue-Grey for hover (matches general links) */
-		border-bottom-color: #84999A;
+		color: #3a5c48; /* Darker shade for hover */
+		border-bottom-color: #3a5c48; /* Darker shade for hover */
 	}
 	main {
 		padding: 1.5rem;
@@ -99,7 +99,7 @@ const currentPage = Astro.url.pathname;
 		text-align: center;
 		padding: 1.5rem 0;
 		background-color: transparent; 
-		color: #4A442D; 
+		color: #49745b; /* Unified text color */
 		font-size: 0.9rem;
 	}
 	button {
